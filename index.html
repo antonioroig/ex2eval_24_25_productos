@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Catálogo de Productos</h1>
+
+    <!-- Campo para introducir el nombre de usuario -->
+    <div class="cargar-usuario">
+        <input type="text" id="nombre-usuario" placeholder="Nombre Usuario API" style="width: 5cm;" autocomplete="on">
+        <button id="cargar-productos">Cargar productos API</button>
+        <button id="guardar-local">Guardar productos (LocalStorage)</button>
+        <button id="cargar-local">Cargar productos (LocalStorage)</button>
+        <button id="borrar-local">Borrar productos (LocalStorage)</button>
+    </div>
+    <h2>Formulario Añadir Producto</h2>
+    <!-- Formulario para agregar un nuevo producto -->
+    <form id="formulario-producto">
+        <input type="text" id="nprod" placeholder="Nombre del producto" required>
+        <input type="number" id="nprecio" placeholder="Precio unitario" required>
+        <input type="number" id="ncantidad" placeholder="Cantidad en stock" required>
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+    <!-- Lista de productos -->
+    <h2>Listado de Productos</h2>
+
+    <ul id="lista-productos"></ul>
+
+    <!-- Template para el formulario de edición -->
+    <template id="plantilla-formulario-edicion">
+        <form class="formulario-edicion">
+            <input type="text" class="editar-nombre" required>
+            <input type="number" class="editar-precio" required>
+            <input type="number" class="editar-cantidad" required>
+            <button type="submit">Guardar</button>
+            <button type="button" class="cancelar-edicion">Cancelar</button>
+        </form>
+    </template>
+
+    <script></script>
+</body>
+</html>

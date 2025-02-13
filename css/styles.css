@@ -1,0 +1,101 @@
+/* Fondo degradado */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+    color: #333; /* Color de texto más oscuro para el fondo claro */
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Estilos para el contenedor del formulario */.cargar-usuario {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}.cargar-usuario input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}.cargar-usuario button {
+    padding: 8px 16px;
+    background-color: #3498db; /* Azul para botones de carga */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}.cargar-usuario button:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilos para el formulario de agregar producto */
+#formulario-producto {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#formulario-producto input {
+    padding: 8px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formulario-producto button {
+    padding: 8px 16px;
+    background-color: #2ecc71; /* Verde para el botón de agregar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#formulario-producto button:hover {
+    background-color: #27ae60; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Estilos para la lista de productos */
+#lista-productos {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-productos li {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Contenido en columna */
+    align-items: flex-start; /* Alineación a la izquierda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}.contenido-producto {
+    flex-grow: 1;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Espacio entre contenido y botones */
+}.acciones-producto {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px; /* Espacio encima de los botones */
+}.acciones-producto button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}.acciones-producto button.editar {
+    background-color: #2980b9; /* Azul para el botón de editar */
+    color: white;
+}.acciones-producto button.editar:hover {
+    background-color: #2471a3; /* Azul más oscuro al pasar el ratón */
+}.acciones-producto button.eliminar {
+    background-color: #c0392b; /* Rojo para el botón de eliminar */
+    color: white;
+}.acciones-producto button.eliminar:hover {
+    background-color: #a93226; /* Rojo más oscuro al pasar el ratón */
+}
