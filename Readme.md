@@ -27,7 +27,7 @@ Directorio css/:
 * `styles.css`: Contiene los estilos CSS de la aplicación.
 
 # Imágenes de como queda la lista de productos, la aplicación y vídeo explicativo
-
+***Nótese cómo el formulario de edición de productos que viene de un template se añade en el <li> del producto como el último <div> y dentro del <div>, antes del formulario se pone un <br>.***
 [Ver captura de la estructura](imagenes/estructuraListadoProductos.png)
 [Ver vista de la aplicación](imagenes/vistaAplicacion.png)
 [Ver vídeo explicativo](https://gvaedu-my.sharepoint.com/:v:/g/personal/a_roighernandez_edu_gva_es/EX_MsDEoOCVPpZ83h4PbWioBmnDV2uOG6gGVRndKw6wKrg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EBdhaj)
@@ -107,7 +107,6 @@ Este proyecto utiliza una API externa para gestionar los datos de los productos.
 
 | Ruta                                         | Método | Descripción                                                                 |
 |-----------------------------------------------|--------|-----------------------------------------------------------------------------|
-| `/`                                           | GET    | **No se utiliza en este proyecto.** Normalmente se usaría para obtener todos los productos. |
 | `/{usuario}`                                | GET    | Obtiene todos los productos del usuario especificado.                         |
 | `/{usuario}`                                | POST   | Agrega un nuevo producto para el usuario especificado.                       |
 | `/{usuario}/{idProducto}`                    | PUT    | Actualiza el producto con el ID dado para el usuario especificado.           |
@@ -205,6 +204,6 @@ La evaluación de este proyecto se basará en la correcta implementación de las
 
 **Puntuación:**
 
-* **`api.js`:** 2 puntos (0.5 puntos por función).
+* **`api.js`:** 2 puntos 
 * **`render.js`:** 5 puntos (2 puntos para `renderizarProductos`, 2 punto para `ManejaEdit`, 1 punto para `ManejaBorra`).
-* **`app.js`:** 3 puntos (1 punto por cada evento manejado correctamente).
+* **`app.js`:** 3 puntos 
